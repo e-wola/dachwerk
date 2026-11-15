@@ -1,5 +1,5 @@
 /* Dachwerk Bavaria: design system. Navy #0B2D5B / Bavarian red #C8102E / white. Archivo (self-hosted). */
-@font-face{font-family:"Archivo";src:url(/fonts/archivo-de2.woff2) format("woff2");font-weight:400 900;font-stretch:100% 125%;font-display:swap}
+@font-face{font-family:"Archivo";src:url(../fonts/archivo-de2.woff2) format("woff2");font-weight:400 900;font-stretch:100% 125%;font-display:swap}
 
 :root{
   --navy:#0B2D5B;--navy-900:#061C3B;--navy-700:#123C75;--red:#C8102E;--red-700:#A50D26;--white:#fff;

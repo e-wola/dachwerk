@@ -106,7 +106,7 @@
     } else {
       h += '<div class="result__range"><div class="result__label">Einschätzung · ' + NAMES[r.l] + '</div><div class="result__num">Preis nach Sichtung</div><div class="result__sub">Ohne Besichtigung wäre jede Zahl geraten. Wir schauen es uns an.</div></div>';
     }
-    h += '<div class="result__rec"><b>Unsere Einordnung</b>' + recommend(r).map(function (t) { return '<p>' + t + '</p>'; }).join('') + (page ? '<p><a href="/leistungen/' + page + '/">Mehr zu ' + NAMES[r.l] + '</a></p>' : '') + '</div>';
+    h += '<div class="result__rec"><b>Unsere Einordnung</b>' + recommend(r).map(function (t) { return '<p>' + t + '</p>'; }).join('') + (page ? '<p><a href="' + (D.base || '') + '/leistungen/' + page + '/">Mehr zu ' + NAMES[r.l] + '</a></p>' : '') + '</div>';
     if (r.ass) h += '<details class="result__ass"><summary>Wie wurde gerechnet?</summary><ul>' + r.ass.map(function (a) { return '<li>' + a + '</li>'; }).join('') + '<li>Nicht enthalten: Gerüst, Entsorgung, Zusatzarbeiten am Holz, Sonderdetails</li></ul></details>';
     box.innerHTML = h;
     form.elements.anliegen.value = NAMES[r.l]; form.elements.nachricht.value = describe(r);

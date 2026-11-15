@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /api/
-
-Sitemap: https://www.dachwerk-bavaria.de/sitemap.xml
+Disallow: /

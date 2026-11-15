@@ -55,7 +55,8 @@
   /* ---- lazy-load feature scripts ---- */
   function load(src, cb) { var s = document.createElement('script'); s.src = src; s.onload = cb || null; document.body.appendChild(s); }
   var v = (window.DW && window.DW.v) || {};
-  if ($('form[data-form], [data-dachcheck]')) load('/js/forms.js?v=' + v.forms, function () { if ($('[data-dachcheck]')) load('/js/dachcheck.js?v=' + v.dc); });
+  var B = (window.DW && window.DW.base) || '';
+  if ($('form[data-form], [data-dachcheck]')) load(B + '/js/forms.js?v=' + v.forms, function () { if ($('[data-dachcheck]')) load(B + '/js/dachcheck.js?v=' + v.dc); });
 
   /* ---- GSAP choreography ---- */
   if (!motion) return;
